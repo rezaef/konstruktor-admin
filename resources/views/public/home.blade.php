@@ -10,7 +10,7 @@
         <a href="#about" class="text-gray-700 hover:text-teal-700">About</a>
         <a href="#projects" class="text-gray-700 hover:text-teal-700">Projects</a>
         <a href="#services" class="text-gray-700 hover:text-teal-700">Services</a>
-        <a href="{{ route('contact') }}" class="rounded-xl bg-teal-600 px-4 py-2 text-white hover:bg-teal-700">Contact</a>
+        <a href="{{ route('login') }}" class="rounded-xl bg-teal-600 px-4 py-2 text-white hover:bg-teal-700">Login</a>
       </nav>
     </div>
   </header>
