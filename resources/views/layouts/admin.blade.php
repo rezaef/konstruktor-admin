@@ -14,11 +14,16 @@
         <aside class="hidden md:flex md:col-span-2 lg:col-span-2 xl:col-span-2 bg-white dark:bg-gray-900/60 border-r border-gray-200 dark:border-white/10">
             <div class="flex flex-col w-full">
                 <div class="h-16 px-5 flex items-center gap-3 border-b border-gray-200/70 dark:border-white/10">
-                    <div class="h-10 w-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-semibold">AD</div>
-                    <div>
-                        <div class="text-sm text-gray-500 dark:text-gray-400">Admin Panel</div>
-                        <div class="text-base font-semibold text-gray-900 dark:text-white">Your App</div>
-                    </div>
+                   <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-xl bg-gray-900/5 dark:bg-gray-800/80 flex items-center justify-center overflow-hidden">
+                    <img src="{{ asset('images/logo-hda.jpeg') }}" alt="HDA Interior" class="h-8 w-auto">
+                </div>
+                <div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">Admin Panel</div>
+                    <div class="text-base font-semibold text-gray-900 dark:text-white">HDA Interior</div>
+                </div>
+</div>
+
                 </div>
 
                 <nav class="p-3 space-y-1 text-sm">
