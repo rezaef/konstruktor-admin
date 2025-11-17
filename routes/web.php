@@ -49,7 +49,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/export', function () {
         return view('admin.export');  // Export Jobs Table
     })->name('admin.export');
-
+    
 });
 
 
