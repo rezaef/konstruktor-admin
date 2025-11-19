@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CashOutController;
 
 // ==================== PUBLIC PAGES ====================
 Route::get('/', function () {
@@ -49,7 +50,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/export', function () {
         return view('admin.export');  // Export Jobs Table
     })->name('admin.export');
-    
+
+    Route::get('/rekapitulasi', [CashOutController::class, 'index'])
+        ->name('admin.rekapitulasi');
+
+    Route::resource('/cashflows', CashOutController::class);
 });
 
 
