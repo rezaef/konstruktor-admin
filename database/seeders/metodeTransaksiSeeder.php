@@ -2,19 +2,18 @@
 
 namespace Database\Seeders;
 
-use App\Models\MetodeTransaksi;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
-class metodeTransaksiSeeder extends Seeder
+class MetodeTransaksiSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
-    public function run(): void
+    public function run()
     {
-        MetodeTransaksi::create(['name' => 'Cash']);
-        MetodeTransaksi::create(['name' => 'Debit']);
-        MetodeTransaksi::create(['name' => 'Transfer']);
-        MetodeTransaksi::create(['name' => 'Kartu Kredit']);
+        DB::table('metode_transaksi')->insert([
+            ['nama' => 'Cash'],
+            ['nama' => 'Debit'],
+            ['nama' => 'Transfer'],
+            ['nama' => 'Kartu Kredit'],
+        ]);
     }
 }
